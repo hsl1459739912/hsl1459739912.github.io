@@ -1,0 +1,440 @@
+@charset "UTF-8";
+*{
+    font-family: 仿宋;
+}
+body{
+    min-width: 1100px;
+    background: url("../img/text-bg.png");
+}
+header{
+    margin-top: -100px;
+    position: relative;
+}
+.utm{
+    width: 100%;
+}
+.user_ps{
+    margin-left: 50px;
+    position: absolute;
+    color: white;
+    top: 36%;
+    left: 20%;
+}
+.user_name{
+    font-size: 35px;
+    font-family: "楷体";
+    margin-top: 10px;
+}
+.user_style{
+    margin-top: -20px;
+}
+.exc_user{
+    border-radius: 5px;
+    background: #cfde88;
+    width: 70px;
+    height: 30px;
+    font-size: 15px;
+    position: absolute;
+    top: 200px;
+}
+.user_img{
+    width: 100px;
+    height: 100px;
+    margin: 20px 0;
+    display: block;
+    border-radius: 50%;
+}
+.user_ps p{
+    margin-bottom: 40px;
+    color: #722f1c;
+}
+.user_nav{
+    text-align: center;
+    position: absolute;
+    top: 300px;
+    width: 100%;
+    font-size: 25px;
+    line-height: 50px;
+    cursor: pointer;
+}
+.user_nav li{
+    display: inline-block;
+    letter-spacing: 2px;
+    text-decoration: none;
+    padding: 5px;
+    color: black;
+    font-weight: lighter;
+}
+.user_nav li:hover{
+    opacity: .5;
+}
+#time{
+    padding: 20px;
+    color: #cfde88;
+    position: absolute;
+    left: 70%;
+    top: 65%;
+}
+#time p{
+    margin-bottom: 5px;
+}
+main{
+    margin-bottom: 100px;
+}
+.user_main{
+    text-align: center;
+}
+main>div>div :not(.user_nav,.indexs){
+    width: 40%!important;
+}
+.user-text{
+    font-size: 15px;
+    resize: none;
+    border: 1px solid #90ddde;
+    width: 600px;
+    height: 100px;
+    text-indent: 2em;
+    margin-top: 100px;
+    border-radius: 20px;
+    outline: none;
+    padding: 10px;
+}
+#user_trend{
+    width: 40%;
+    margin: 0 auto;
+}
+#user_trend div,#index_text div:not(.texs_talk){
+    border-radius: 10px;
+    border-top: 20px #696969 solid!important;
+    background: url("../img/text-bg.png");
+    margin: 50px auto;
+    padding: 30px;
+    border: 2px solid ;
+    position: relative;
+}
+#user_trend p ,#index_text p:not(.texs_talk p){
+    text-indent: 2em;
+    text-align: left;
+    font-size: 25px;
+}
+.no_sub{
+    text-align: center !important;
+}
+.no_word{
+    font-size: 22px;
+}
+#user_trend h1,#index_text h1{
+    text-align: left;
+    margin-bottom: 20px;
+}
+#user_trend span,#index_text span{
+    display: block;
+    text-align: left;
+    margin-bottom: 10px;
+    color: dimgrey;
+}
+#index_text span:last-child{
+    margin-bottom: 60px;
+}
+.button{
+    border-radius: 10px;
+    padding: 10px 20px;
+    background:#2f435e;
+    color:#f2f2f2;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+.words{
+    text-align: center;
+}
+#word_trend div{
+    margin: 30px 30% 10px;
+    border-bottom: 2px #696969 solid;
+    position: relative;
+}
+#word_trend  h1{
+    text-align: left;
+    font-size: 30px;
+    margin: 20px;
+    font-weight: lighter;
+    color: #b18958;
+}
+#word_trend span{
+    display: block;
+    text-align: right;
+    color: #6699CC;
+}
+#word_trend div>p{
+    font-size: 25px;
+    text-align: left;
+    text-indent: 2em;
+    margin: 30px 0;
+    color: #3a1f14;
+}
+.photos{
+    margin: 100px 30%;
+    text-align: center;
+    padding-bottom:200px;
+}
+.photos form{
+    width: 700px;
+    margin-bottom: 100px;
+}
+.photos input:not(#file_up){
+    width: 200px;
+    height: 40px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    text-indent: 2em;
+    margin-right: 20px;
+}
+#photo_trend div,#index_photo div:not(.phos_talk){
+    margin: 50px auto 100px;
+    position: relative;
+    border: 1px solid #000000;
+    padding: 50px;
+    border-radius: 10px;
+}
+#photo_trend h1,#index_photo h1{
+    position: absolute;
+    left: 10px;
+    top: -40px;
+    font-size: 20px;
+}
+#photo_trend span,#index_photo span{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+#photo_trend p,#index_photo>div>p :not(.phos_talk){
+    width: 200px;
+    text-align: left;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+#photo_trend img,#index_photo img{
+    width: 200px;
+    height: auto;
+    margin-bottom: 100px;
+}
+.section{
+    width: 60%;
+    text-align: center;
+    margin: 100px auto 200px;
+}
+.section_name{
+    margin: 20px auto;
+    width: 440px;
+    height: 30px;
+    display: block;
+    border: 1px solid #000000;
+    border-radius:10px ;
+    text-indent: 2em;
+}
+.section_text{
+    overflow-y: scroll;
+    font-size: 18px;
+    border: 1px solid #000000;
+    width: 400px;
+    height: 200px;
+    display: block;
+    margin: 20px auto;
+    resize: none;
+    padding: 20px;
+    border-radius: 10px;
+    outline: none;
+}
+#section_trend div,#index_section div:not(.secs_talk){
+    text-align: center;
+    margin: 50px 20px;
+    padding: 30px 50px;
+    position: relative;
+    border-bottom: 1px solid #696969;
+}
+#section_trend h3,#index_section h3{
+    font-size: 35px;
+    font-family: "微软雅黑 Light";
+    margin-top: 60px;
+}
+#section_trend h1,#index_section h1{
+    position: absolute;
+    top: 10px;
+    font-size: 25px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.sec_btn{
+    opacity: .5;
+    padding: 10px 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: all 2s;
+}
+#section_trend p,#index_section p:not(.secs_talk){
+    white-space: pre-line;
+    text-align: left;
+    margin: 30px auto 100px;
+    font-size: 20px;
+    text-indent: 2em;
+}
+#section_trend span,#index_section span:not(.secs_talk){
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    margin-top: 20px;
+    color: dimgrey;
+}
+#section_trend button,#index_section button:hover{
+    opacity: 1;
+    border-radius: 10px;
+}
+.user_set{
+    width: 20%;
+    text-align: center;
+    margin: 100px auto 200px;
+    position: relative;
+}
+.user_set form{
+    text-align: left;
+}
+.head_set{
+    margin:  0 0  22px 30px;
+    width: 200px;
+    height: 40px;
+}
+.user_set form{
+    width: 350px;
+
+}
+.user_set input:not(.head_set){
+    margin:  0 0  22px 30px;
+    width: 200px;
+    height: 40px;
+    border-bottom: 1px solid #696969;
+}
+.user_set button{
+    position: absolute;
+    left: 50%;
+    padding: 10px 20px;
+    border: 1px solid #696969;
+    border-radius: 5px;
+    background: white;
+    cursor: pointer;
+}
+.indexs{
+    margin-top: 100px;
+    text-align: center;
+}
+.indexs li {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 30px;
+    margin-right: 10px;
+    padding-right: 10px;
+}
+.indexs li:hover{
+    opacity: .5;
+}
+.bbbb:not(:first-child){
+    display: none;
+}
+#index_text{
+    display: block;
+}
+.bbbb{
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+}
+.bbbb input{
+    width: 350px;
+    height: 30px;
+    border: 1px solid #000000;
+    position: absolute;
+    bottom: 50px;
+    right: 150px;
+}
+.secs_talk,.phos_talk,.texs_talk{
+    position: relative;
+    margin: 50px auto 100px;
+    border-top: 1px solid #696969;
+}
+.secs_talk p,.phos_talk p,.texs_talk p{
+    text-align: left;
+    font-size: 18px;
+    margin: 20px auto;
+}
+.indexs li:not(:last-child){
+    border-right: solid 2px #000000;
+}
+.index_pho>p{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 25px;
+}
+.add{
+    width: 100px;
+    height: 30px;
+    background: white;
+    border: 1px #000000 solid;
+    border-radius: 10px;
+}
+footer{
+    background: white;
+    z-index: 1;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    margin-top: 200px;
+    position: fixed;
+    bottom: 0;
+}
+mark{
+    background: yellow;
+}
+.ft-bg{
+    width: 100%;
+    height: 60px;
+    background: #2765e5;
+}
+.user_nav{
+    display: block;
+}
+.mn:not(.indexs){
+    display: none;
+}
+.gotop{
+    width: 40px;
+    height: 50px;
+    position: fixed;
+    right: 50px;
+    bottom: 100px;
+    cursor: pointer;
+}
+.button>span{
+    display: none!important;
+}
+.img img{
+    width: 200px;
+    height: 200px;
+    background: #38B0DE;
+}
+
+@media screen and (max-width:800px) {
+    .user_nav li{
+        display: block;
+        background: #c3ccc3;
+        width: 80px;
+        margin: 2px 0px;
+    }
+    .user_nav{
+        position: fixed;
+        left: 2%;
+        top: 300px;
+        width: 100px;
+    }
+}

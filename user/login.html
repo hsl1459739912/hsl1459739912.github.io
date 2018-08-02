@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/normalized.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./plugin/LHYAlertView.css">
+    <link rel="shortcut icon" href="./favo.ico" type="image/x-icon" />
+    <title>HOLO</title>
+</head>
+<body>
+<div class="login">
+    <h1>HOLO</h1>
+    <h3>进入HOLO，发现未知的世界</h3>
+    <form action="" class="lg-fr">
+        <input type="text" class="un" id="lg-un" placeholder="请输入用户名">
+        <input type="password" class="pw" id="lg-pw" placeholder="请输入密码">
+        <input type="text" id="lg-vd" placeholder="请输入验证码" class="tes">
+        <small id="vd" onselectstart="return false" oncopy = "return false "class="validata"></small>
+        <button type="button" id="login">登录</button>
+        <p>没有账号？前往<span id="bt-rg">注册</span></p>
+    </form>
+</div>
+<div class="register">
+    <h1>HOLO</h1>
+    <h3>进入HOLO，发现未知的世界</h3>
+    <form action="" class="rg-fr">
+        <section class="input-box" data-msg="用户名不合法">
+            <input id="rg-un" class="username" type="text" placeholder="请输入4-16位用户名">
+        </section>
+        <section class="input-box" data-msg="密码不合法">
+            <input id="rg-pw" class="password" type="password" placeholder="请输入4-16位密码">
+        </section>
+        <section class="input-box" data-msg="两次输入的密码不同">
+            <input id="rg-pwt" type="password" class="password" placeholder="请重复输入密码">
+        </section>
+        <section class="input-box  hidden" data-msg="邮箱不合法">
+            <input id="rg-id" type="email" class="email" placeholder="请输入邮箱">
+        </section>
+        <button type="button" id="regist">注册</button>
+        <p>已有账号？前往<span id="bt-lg">登录</span></p>
+    </form>
+</div>
+<script src="./plugin/jquery-3.3.1.min.js"></script>
+<script src="./plugin/bmob-min.js"></script>
+<script src="./plugin/LHYAlertView.js"></script>
+<script src="./js/functions.js"></script>
+<script src="./js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/user.css">
+    <link rel="stylesheet" href="./plugin/LHYAlertView.css">
+    <link rel="stylesheet" href="./css/normalized.css">
+    <link rel="stylesheet" href="./plugin/style.css">
+    <link rel="shortcut icon" href="./favo.ico" type="image/x-icon"/>
+    <title>我的主页</title>
+</head>
+<body>
+<header class="clearFix">
+    <div class="sky">
+        <div class="clouds_one"></div>
+        <div class="clouds_two"></div>
+        <div class="clouds_three"></div>
+    </div>
+    <div class="utm clearFix">
+        <div class="user_ps">
+            <div class="users">
+                <p class="user_name">HOlO新用户</p>
+                <p class="user_style">请编辑你的签名</p>
+                <img src="./img/head.png" alt="" class="user_img">
+            </div>
+        </div>
+        <div id="time" class="">
+        </div>
+    </div>
+</header>
+<main class="clearFix">
+    <div class="box">
+        <ul class="user_nav">
+            <li class="nav index" data-index="0">主页</li>
+            <li class="nav secc" data-index="1">日志</li>
+            <li class="nav photo" data-index="2">相册</li>
+            <li class="nav word" data-index="3">树洞</li>
+            <li class="nav text" data-index="4">说说</li>
+            <li class="nav set" data-index="5">设置</li>
+        </ul>
+        <div class="indexs mn">
+            <ul class="list">
+                <li class="aaaa" data-index="0">说说</li>
+                <li class="aaaa" data-index="1">文章</li>
+                <li class="aaaa" data-index="2">图片</li>
+            </ul>
+            <div id="index_text" class="bbbb">
+            </div>
+            <div id="index_section" class="bbbb">
+            </div>
+            <div id="index_photo" class="bbbb">
+            </div>
+        </div>
+        <div class="section mn">
+            <input type="text" class="section_name" placeholder="请输入标题">
+            <textarea class="section_text" placeholder="请输入正文"></textarea>
+            <button type="button" class="new_section add
+    " id="section_sub">发表文章</button>
+            <div id="section_trend" class="clearFix">
+                <p class="no_photo">当前没有日志，请在上方添加</p>
+            </div>
+            </form>
+        </div>
+        <div class="photos mn">
+            <form action="">
+                <input type="text" class="photo_name" placeholder="输入你的描述">
+                <input type="file" class="photofile" id="file_up">
+                <button type="button" class="new_photos add
+    " id="photo_sub">上传</button>
+            </form>
+                <div id="photo_trend" class="clearFix">
+                </div>
+        </div>
+        <div class="words mn">
+            <form action="">
+                <textarea placeholder="吐个槽吧" class="user-word user-text"></textarea>
+                <br>
+                <button id="word_sub" class="add" type="button">吐槽</button>
+                <div id="word_trend" class="clearFix">
+                    <p class="no_word"></p>
+                </div>
+            </form>
+        </div>
+        <div id="user" class="user_main talk mn">
+            <form action="">
+                <textarea placeholder="向世界分享此刻的心情吧！！！" class="user-text user_talks"></textarea>
+                <br>
+                <button id="user_sub" class="add" type="button">发布</button>
+            </form>
+            <div id="user_trend" class="clearFix">
+                <p class="no_sub">你还未发表过动态，来发布你的第一条动态吧!!!!</p>
+            </div>
+        </div>
+        <div class="user_set mn">
+            个人设置:<form action=""><br>
+            头像:<input type="file"
+        class="head_set">
+            <br>
+            昵称:<input type="text" class="name_set" maxlength="15">
+            <br>
+            签名:<input type="text" class="style_set"><br>
+            <button type="button" class="set_style">修改</button>
+            </form>
+
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="ft_main">
+        <p>Copyright © 2005 - 2018 HSL.All Rights Reserved.</p>
+        <p><mark>W1802</mark> 版权所有</p>
+    </div>
+    <div class="ft-bg"></div>
+    <img src="./img/gotop.png" alt="" class="gotop">
+</footer>
+
+<script src="./plugin/jquery-3.3.1.min.js"></script>
+<script src="./plugin/bmob-min.js"></script>
+<script src="./plugin/LHYAlertView.js"></script>
+<script src="./js/functions.js"></script>
+<script src="./js/user.js"></script>
+</body>
+</html>
