@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+
+.show{
+    opacity: 1;
+}
+.choose_circle{
+   background: white; 
+}
+.main_bg{
+   background: url(../images/sprites.png)no-repeat;
+  }
+main{
+   width: 100%;
+   .content{
+    min-width: 1150px;
+    width: 60%;
+    margin: 0 auto;
+    h1{
+        
+        width: 431px;
+        height: 35px;
+        background-position: 0 0;
+        margin: 34px auto 50px;
+    }
+    .content_box{
+        width: 100%;
+    //    background: red;
+
+        .img_rotation{
+            position: relative;
+            width: 750px;
+            height: 388px;
+
+            .img_rotation_box{
+                        position: relative;
+                        display: block;
+                        width: 750px;
+                        height: 388px;
+                        overflow: hidden;
+                .rotation_pic{
+                        display: block;
+                        width: 750px;
+                        height: 388px;
+                        position: absolute;
+                        left: 0;
+                        border: 1px solid #bfbfbe;
+                        opacity: 1;
+                        transition: transform 1.9s linear, opacity .3s linear;
+                        
+                }
+            }
+            .rotation_circle{
+                
+                position: absolute;
+                left: 40px;
+                bottom: 10px;
+                
+                z-index: 4;
+                .circle{
+                    display: inline-block;
+                    height: 11px;
+                    width: 11px;
+                    border-radius:50%;
+                    // background: transparent;
+                    border:2px solid white;
+                    margin-left:10px; 
+                    // transition: all .5s linear;
+                    &:hover{
+                        background: white; 
+                    }
+                }
+            }
+        }
+        .img_box{
+        width: 350px;
+        height: 388px;
+        display: block;
+        overflow: hidden;
+        border: 1px solid #bfbfbe;
+        
+        }
+        .img_top{
+        margin-top: 40px;
+        border: 1px solid #bfbfbe;
+        }
+        .img_4{
+        //    width: 370px;
+            margin-left:40px; 
+            img{
+            width: 365px;
+            height: 817px;
+            
+            }
+        }
+        .imgLast{
+            width: 100%;
+            height: 388px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            // background: palevioletred;
+            div{
+
+                .m_blogWin{
+                    width: 350px;
+                    height: 388px;
+                    border: 1px solid #bfbfbe;
+
+                }
+                img{
+                    width: 750px;
+                    height: 388px;
+                    border: 1px solid #bfbfbe;
+                }
+
+            }
+        }
+    }
+   }
+}
