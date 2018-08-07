@@ -1,0 +1,130 @@
+@charset "UTF-8";
+main{
+    width: 100%;
+    min-width: 1100px;
+}
+.home-t {
+    width: 100%;
+    height: 360px;
+    background: url("../images/home/1503904091.jpg") left;
+    position: relative;
+    margin-bottom: 30px;
+}
+.home-t div{
+    color: white;
+    background: orange;
+    width: 480px;
+    height: 170px;
+    opacity: .7;
+    position: absolute;
+    top:80px;
+    left: 300px;
+}
+.home-t p,.home-t h2{
+    margin:30px 20px 0 40px ;
+}
+.home-n{
+    color: #333333;
+    font-size: 12px;
+    margin: 30px 0 30px 20%
+
+}
+.home-n a {
+    color: #333333;
+}
+.home-n a:hover{
+    color: #0046aa;
+}
+h1{
+    margin-bottom: 20px;
+}
+.home-b{
+    width: 41%;
+    margin:20px auto;
+
+}
+.home-b div{
+    margin-right: 40px;
+    position: relative;
+}
+.home-b span{
+    position: absolute;
+    top: 15px;
+}
+.home-b a{
+    color: black;
+}
+.home-b a:hover{
+    color: #0984be;
+}
+.home-m{
+    width: 72%;
+    margin: 0 auto;
+    position: relative;
+}
+.hms {
+    position: absolute;
+    top: 30%;
+}
+.hmp{
+    margin: 5px 10px 5px 0;
+    overflow: hidden;
+}
+.hmp1{
+    margin: 200px;
+}
+.hms1{
+    width: 444px;
+}
+.hms2{
+    width: 292px;
+}
+.home-m h3{
+    font-size: 25px;
+    color: orange;
+}
+.hmb{
+    width: 101%;
+    height: 800px;
+    background: url("../images/home/bck03.jpg") no-repeat;
+}
+.hmp img {
+    width: 100%;
+    height: 100%;
+    transition: all .5s linear;
+}
+.hmp:hover{
+    border: 2px solid orange;
+}
+.hmp:hover img{
+    transform: scale(1.3,1.3);
+}
+.hmp{
+    border:  2px solid transparent;
+}
+.home-a{
+    width: 60%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.home-a div{
+    width: 350px;
+    height: 100px;
+}
+.home-a h2{
+    line-height: 100px;
+    margin-left: 200px;
+}
+.home-a div:hover{
+    border: 2px solid orange;
+}
+.ha1{
+    background: url("../images/home/111.jpg");
+}
+.ha2{
+    background: url("../images/home/222.jpg");
+}
+.ha3{
+    background: url("../images/home/333.jpg");
+}

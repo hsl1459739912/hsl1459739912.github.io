@@ -1,0 +1,160 @@
+@charset "UTF-8";
+main:not(.c-b){
+    width: 63%;
+    margin: 0 auto;
+    min-width: 1100px;
+}
+.c-b{
+    width: 170%;
+    height: 360px;
+    background: url("../images/commercial/1512722766.jpg")left;
+    position: relative;
+    left: -35%;
+    margin-bottom: 30px;
+}
+.c-a{
+    color: #333333;
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+.c-a a {
+    color: #333333;
+}
+.c-a a:hover{
+    color: #0046aa;
+}
+h1{
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 1200px;
+    height: 500px;
+    margin: 100px auto 0;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: normal;
+    color: #333;
+    padding-bottom: 30px;
+}
+
+
+.ct-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ct-list li {
+    width: 180px;
+    overflow: hidden;
+    transition: all .25s linear;
+    position: relative;
+}
+.ct-list li:first-child {
+    width: 630px;
+}
+.ct-list li:first-child .mask {
+    opacity: 0;
+}
+
+.ct-list img {
+    vertical-align: middle;
+}
+
+.ct-list:hover li {
+    width: 180px;
+}
+.ct-list:hover li .mask {
+    opacity: 1;
+}
+.ct-list li:hover {
+    width: 630px;
+}
+.ct-list li:hover .mask {
+    opacity: 0;
+}
+
+.ct-list li > .mask {
+    width: 100%;
+    height: 95%;
+    background: rgba(0, 0, 0, .65);
+    transition: all .35s linear;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.work p,.factory p,.traffic p{
+    opacity: 1;
+}
+li p{
+    opacity: 0;
+}
+ li:hover p{
+    opacity: 1;
+}
+.ca li:hover p{
+    display: inline-block;
+}
+.ca{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    color: white;
+    font-size: 17px;
+}
+.c-case li{
+    position: relative;
+    overflow: hidden;
+}
+.c-case p{
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    color: white;
+}
+.c-case h3{
+    font-size: 24px;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    color: white;
+}
+li img{
+    margin-bottom: 20px;
+}
+li img{
+    vertical-align: middle;
+}
+.c-t{
+    width: 70%;
+    text-align: center;
+    margin: 50px auto;
+    height: 80px;
+}
+.c-t a{
+    height: 100px;
+    color: black;
+}
+.c-t a :hover{
+    color: #0046aa;
+}
+.c-t img{
+    position: relative;
+    top: 20px;
+}
+.c-t span{
+    font-size: 20px;
+    padding-right: 20px;
+    height: 80px;
+}
+.c-t a:not(:last-child) {
+    margin-right: 50px;
+    border-right: 1px solid black;
+}
+.c-case li img:hover{
+    transform: scale(1.2,1.2);
+}
+
