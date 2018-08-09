@@ -1,0 +1,94 @@
+ //获取非行内样式
+    function getstyle(le,attr) {
+        if(le.currentStyle[attr]){
+            return le.currentStyle[attr];
+        }else {
+            return getComputedStyle(le,null)[attr];
+        }
+    }
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <title>My Bmob App</title>
+    <meta name="description" content="My Bmob App">
+    <meta name="viewport" content="width=device-width">
+    <script type="text/javascript" src="./plugin/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="./plugin/bmob-min.js"></script>
+</head>
+<body>
+
+<input type="file" id="profilePhotoFileUpload"  >
+<button type="button" onclick='uploadfile()'>上传</button>
+<div id="imagelist"></div>
+<div id="showIMG"style="height: 400px;width: 500px;" ></div>
+    <script type="text/javascript">
+        //Bmob.initialize("Application ID", "REST API Key");
+        Bmob.initialize("0319b91e2178a41cbd7c7683126ed4cd", "3afd32e8095f62c049de343910a9473f");
+        function uploadfile(){
+            var fileUploadControl = $("#profilePhotoFileUpload")[0];
+            if (fileUploadControl.files.length > 0) {
+                var fileObjs = fileUploadControl.files[0];
+                var file = new Bmob.File(fileObjs.name, fileObjs);
+
+                //上传文件
+                file.save().then(function(obj) {
+                    var PhotoList = Bmob.Object.extend("test1");
+                    var photoList = new PhotoList();
+                    //把返回的文件插入到文件列表
+                    var image=$("<image src='"+obj.url()+"'/>");
+                    var imagelist =$("#imagelist")
+
+                    imagelist.append(image);
+                    var url =obj.url();
+                    //把文件的url保存在表“PhotoList”的字段“url” 中
+                    photoList.set("url",obj.url());
+
+
+                 Bmob.Image.thumbnail({"image":obj.url(),"mode":0,"quality":100,"width":100,"outType":0}
+                ).then(function(obj) {
+                    alert("filename:"+obj.filename); //
+                    alert("url:"+obj.url); //
+                    photoList.set("thumbnailurl",obj.url);
+                    photoList.save();
+                    var imagetemp=$("<image src='http:\//file.bmob.cn/"+obj.url+"'/>");
+                    imagelist.append(imagetemp);
+                });
+
+                }, function(error) {
+                    // the save failed.
+                });
+            }
+        }
+        var query = new Bmob.Query('test1');
+        query.find({
+            success: function(results) {
+               // alert("共查询到 " + results.length + " 条记录");
+                // 循环处理查询到的数据
+                for (var i = 0; i < results.length; i++) {
+                    var object = results[i];
+                    alert(object.id + ' - ' + object.get('url'));
+                }
+            },
+            error: function(error) {
+                alert("查询失败: " + error.code + " " + error.message);
+            }
+        });
+        query.get('af90f79ce1',{
+            success:function (obj) {
+
+            }
+        })
+        document.querySelector('#showIMG').style.backgroundImage = "url(' http://bmob-cdn-19599.b0.upaiyun.com/2018/06/01/4dafa34e40f75b2a80baf8e09de93ef3.png')";
+
+    </script>
+</body>
+</html>
+
+//ajax异步加载
+  $.ajax({
+        url:"./json/data.json",
+        type:"GET",
+        dataType:"json",
+        success:(response)=>{
+		}
+	})

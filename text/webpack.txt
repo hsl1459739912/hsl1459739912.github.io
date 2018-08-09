@@ -1,0 +1,119 @@
+//引入模块
+
+const webpack = require('webpack');
+const path = require('path');
+
+//引入插件
+const CleanWebpackPluin = require('clean-webpack-plugin');//清空文件夹
+const HtmlWebpackPlugin = require("html-webpack-plugin");//打包html
+const extractCSS = require('extract-text-webpack-plugin');//抽离css
+
+//配置任务
+module.exports = {
+    //配置入口
+    entry:{
+        main:"./src/js/main.js",
+        news:'./src/js/news.js'
+    },
+    //出口文件
+    output:{
+        //输出路径
+        path:path.resolve(__dirname,'./dist/'),
+        //文件名
+        filename:'static/js/[name]-bundle-[hash:5].js'
+    },
+    //加载器
+    module:{
+        rules:[
+            //ES6转换ES5
+            {
+                //匹配规则
+                test:/\.js$/,
+                //模块名称
+                use:'babel-loader',
+                //排除
+                exclude:/node_modules/,
+            },
+            //less
+            {  
+                test:/\.(less|css)$/,
+                use:extractCSS.extract({
+                    fallback:'style-loader',
+                    use:['css-loader','postcss-loader','less-loader']
+                }),
+                exclude:/node_modules/
+            },
+        ]
+    },
+    //插件
+    plugins:[
+        //清空指定文件夹
+        new CleanWebpackPluin(['./dist/static/js']),
+        //编译主页
+        new HtmlWebpackPlugin({
+            template:'./src/index.html',
+            inject:true,
+            chunks:['main'],
+            filename:"/static/index.html"
+        }),
+        //编译新闻
+         new HtmlWebpackPlugin({
+            template:'./src/pages/news.html',
+            inject:true,
+            chunks:['news'],
+            filename:"/static/pages/index.html"
+        }),
+        //抽离css
+        new extractCSS('static/css/[name]-[hash:5].css')
+    ]
+}
+
+commonJS
+/*module.exports.setTitle = setTitle;
+const tools = require('./tools');*/
+import '../style/less/index.less';
+
+postcss.config.js
+module.exports = {
+    plugins: [
+        require("autoprefixer")({
+            browsers: ["last 2 versions"]
+        })
+    ]
+};
+
+
+"build": "./node_modules/.bin/webpack --config webpack.config.js --mode development --colors --progress"
+
+
+
+#模块化规范
+- commonJS
+    导出：exports/module exports
+    引用：require
+- AMD/CMD
+- ES6
+    导出：export
+    引用：import
+
+
+安装webpack ：npm i -D webpack webpack-cli
+LOADER:
+安装babel：npm i -D babel-cli babel-core babel-env babel-loader
+打包CSS：npm i -D css-loader style-loader
+转换less：npm i -D less-loader less
+添加前缀：npm i -D postcss-loader autoprefixer
+打包html：npm i -D html-withimg-loader
+PLUGINS:
+打包html：npm i -D html-webpack-plugin 
+清除文件：npm i -D clean-webpack-plugin 
+从js中抽离文件：npm i -D extract-text-webpack-plugin@next
+压缩css：npm i -D cssnano+npm install --save-dev optimize-css-assets-webpack-plugin
+清除多余css：npm i -D purifycss-webpack purify-css
+文件传输：npm i -D file-loader url-loader
+
+
+
+
+
+

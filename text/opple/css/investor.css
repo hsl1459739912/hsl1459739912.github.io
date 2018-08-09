@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+.investor-t{
+    background: url("../images/investor/111.jpg") bottom;
+    height: 360px;
+    width: 100%;
+    position: relative;
+    margin-bottom:20px ;
+}
+.investor-nav {
+    width: 70%;
+    margin: 0 auto;
+}
+.investor-nav span,a{
+    font-size: 12px;
+    color: #333333;
+}
+.investor-nav a:hover{
+    color: #0046aa;
+}
+.investor-b{
+    text-align: center;
+    margin: 50px auto;
+    height: 80px;
+}
+.investor-b a{
+    height: 80px;
+    color: black;
+}
+.investor-b a:hover{
+    color: #0984be;
+}
+.investor-b img{
+    position: relative;
+    top: 20px;
+}
+.investor-b span{
+    font-size: 20px;
+    padding-right: 20px;
+    height: 80px;
+}
+.investor-b a:not(:last-child) {
+    margin-right: 50px;
+    border-right: 1px solid black;
+}
+.investor-m{
+    width: 60%;
+    margin: 50px auto;
+}
+.investor-m h1{
+    margin-bottom: 20px;
+}
+.investor-m img{
+    margin-top: 70px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.investor-n{
+    width: 100%;
+    position: relative;
+    background: #b8c5cc;
+    padding: 100px 0;
+}
+.s1 a,.s1{
+    font-size: 25px;
+    letter-spacing: 3px;
+    margin:30px 0 30px 10px;
+    line-height: 50px;
+}
+.s11{
+    margin-left: 95%;
+}
+.n-img{
+    margin-right: 15%;
+}
+.s1 a:hover{
+    color: #0984be;
+}
+.n-m ,.n-b {
+    width: 70%;
+    background:white;
+    line-height: 70px;
+    margin: 0 auto;
+}
+.s4 {
+    width: 100px;
+    float: right;
+    margin:10px 100px 0 0;
+    border: 2px solid #b8c5cc;
+    line-height: 50px;
+    text-align: center;
+}
+.s3{
+    width: 100px;
+    float: right;
+    margin:10px 100px 0 0 ;
+    border: 2px solid #b8c5cc;
+    line-height: 50px;
+    text-align: center;
+}
+.n-m li:hover .s3{
+    background: #0984be;
+}
+.n-m li:hover .s4{
+    background: #0984be;
+}
+small{
+    margin-left: 40px;
+    color: #b8c5cc;
+    transition: all .5s linear;
+}
+.n-m span{
+    font-size: 15px;
+}
+.n-b{
+    padding: 10px 0;
+}
+.n-b1{
+    background: #0984be;
+    width: 150px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    height: 50px;
+}
+.n-b img{
+    margin-top: 10px;
+}
+.n-b span{
+    position: relative;
+    top: -8px;
+}
+.n-m li:hover{
+    background: #bcfdff;
+}
+.n-m li :hover .s4{
+    background: #0984be;
+}
+.investor-g{
+    width: 70%;
+    margin: 0 auto  ;
+}
+.investor-g h2{
+    font-size: 35px;
+    margin-top: 30px;
+}
+.investor-g img{
+    margin: 100px 25% 0;
+}
+.n-b:hover .n-b1 img{
+    margin-right: 5px;
+}

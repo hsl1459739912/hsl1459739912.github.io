@@ -1,0 +1,89 @@
+
+easy less
+	"less.compile": {
+        "compress": true,
+        "autoprefixer": "> 5%, last 2 Chrome versions, not ie 6-9",
+        "sourceMap": false,
+        "out": "${workspaceRoot}/dist/static/css/"
+    }//less自动编译
+
+npm -v//查看版本
+npm init -y//生成package文件
+	npm i -D babel-cli babel-preset-env
+	"build":"./node_modules/.bin/babel ./src/js -d ./dist/static/js -w"
+	.babelrc文件:{"presets":["env"]} 
+	npm run build//babel自动编译js文件
+
+
+//引入gulp
+const gulp = require('gulp');//gulp对象
+const less = require('gulp-less');//编译less
+const babel = require('gulp-babel');//编译es6
+const ugly = require('gulp-uglify');//丑化代码
+const rename = require('gulp-rename');//重命名
+const notify = require('gulp-notify');//发送通知
+const plumber = require('gulp-plumber');//发送异常
+const rev = require('gulp-rev');//自动注入
+const del = require('del');//删除文件
+const autopro = require('gulp-autoprefixer');//自动添加前缀
+const cleancss = require('gulp-clean-css');//压缩css文件
+
+
+//编译js
+
+
+//删除文件
+gulp.task('del',()=>{
+    del.sync(['./dist']);
+})
+
+
+gulp.task('compJS',()=>{
+    return gulp.src('./src/**/*.js')
+    .pipe(babel({
+        presets:['env']
+    }))
+    //发送异常
+    .pipe(plumber({errorHandler: notify.onError('Error: <%= error.message %>')}))
+    .pipe(ugly())
+    .pipe(rename({
+        suffix:'.min'
+    }))
+    .pipe(gulp.dest('./dist/static'))
+    //发送通知
+    .pipe(notify({message: 'compile-less task is ok.'}));
+})
+
+//编译css
+gulp.task('compCSS',()=>{
+    return gulp.src('./src/less/*.less')
+    .pipe(less())
+    //浏览器添加前缀
+    .pipe(autopro({
+        browsers: ['last 2 versions'],      // 浏览器版本
+        cascade:true,                       // 美化属性，默认true
+        add: true,                          // 是否添加前缀，默认true
+        remove: true,                       // 删除过时前缀，默认true
+        flexbox: true,                      // 为flexbox属性添加前缀，默认true
+    }))
+    //压缩css文件
+    .pipe(cleancss())
+    //.pipe(rev())  自动生成hash值
+    .pipe(gulp.dest('./dist/static/css'));
+})
+
+gulp.task('default',['compJS','compCSS'],()=>{
+    console.log('compileJS is done');
+})
+
+
+//监听文件变化
+gulp.task('dev',()=>{
+    gulp.watch('./src/less/*.less',['compCSS']);
+    gulp.watch('./src/**/*.js',['compJS']);
+
+})
+
+
+
+

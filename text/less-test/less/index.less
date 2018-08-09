@@ -1,0 +1,39 @@
+@charset 'utf-8';
+
+//定义一个变量
+@bgcolor:pink;
+
+body{
+    background: @bgcolor;
+    display: flex;
+}
+@keyframes move{
+    to{}
+    form{}
+}
+
+.border{
+    border: 1px solid #000000;
+}
+h1{
+    color: blue;
+    .border;
+}
+p{
+    color: orange;
+    .border;
+}
+nav {
+    margin: 100 auto;
+    .border;
+    ul{
+        list-style: none;
+        padding: 0;
+        li a{
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}

@@ -1,0 +1,221 @@
+@charset "UTF-8";
+main{
+    width: 70%;
+    margin: 0 auto;
+}
+.about-b{
+    text-align: center;
+    margin: 50px auto;
+    height: 80px;
+}
+.about-b a{
+    height: 80px;
+    color: black;
+}
+.about-b a:hover{
+    color: #0984be;
+}
+.about-b img{
+    position: relative;
+    top: 20px;
+}
+.about-b span{
+    font-size: 20px;
+    padding-right: 20px;
+    height: 80px;
+}
+.about-b a:not(:last-child) {
+    margin-right: 50px;
+    border-right: 1px solid black;
+}
+.about-n{
+    margin: 30px auto;
+    font-size: 15px;
+}
+.about-n a{
+    color: black;
+}
+.about-n a:hover{
+    color: #0984be;
+}
+.about-t ul{
+    text-align: center;
+}
+.about-t ul :first-child{
+    background: #0984be;
+    color: white;
+}
+.about-t ul li{
+    line-height: 40px;
+    width: 150px;
+    text-align: center;
+    color: black;
+    display: inline-block;
+    border: 1px solid #b8c5cc;
+    transition: all .5s linear;
+}
+.about-t ul :hover li{
+    background: white !important;
+    color: black !important;
+}
+.about-t ul li:hover{
+    background: #0984be !important;
+    color: white !important;
+}
+.about-m{
+    text-align: center;
+    margin: 40px auto;
+}
+.about-m h3{
+    margin-bottom: 20px;
+    font-style: inherit;
+}
+.about-m ul li{
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.about-m ul li:hover {
+    color: #0984be;
+}
+.about-m ul  :not(:last-child){
+    border-right: 1px solid #cccccc;
+    padding-right: 15px;
+}
+.about-mm img{
+    float: left;
+    margin:20px 30px;
+    transition: all .5s linear;
+}
+.about-mm {
+    text-align: left;
+    background: #cccccc;
+}
+.about-mm section{
+    margin:30px 20px;
+    padding-top: 30px;
+    font-size: 15px;
+}
+.h3{
+    color: #cccccc;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.about-g{
+    height: 800px;
+    background: #cccccc;
+}
+.g-l{
+    padding: 20px;
+    background: white;
+    margin:50px 50px    ;
+}
+.g-l p{
+    text-align: center;
+    margin-top: 10px;
+}
+.g-l img{
+    width: 770px;
+    height: 580px;
+}
+.g-r{
+    margin-top:50px;
+    background: white;
+    padding: 10px;
+}
+.g-r ul li img{
+    width: 190px;
+    height: 128px;
+    margin-bottom: 10px;
+}
+.t img,.b img{
+    width: 25px !important;
+    height: auto !important;
+    position: relative;
+    left: 80px;
+    background: #cccccc;
+    padding: 3px;
+}
+.about-p h3{
+    font-size: 25px;
+    margin: 20px auto;
+}
+.fan{
+    position: relative;
+    top: -250px;
+}
+.fan2{
+    position: relative;
+    left: 95%;
+    top: -280px;
+}
+.about-p p{
+    background: #cccccc;
+    text-align: center;
+    margin-top: -3px;
+    position: relative;
+    top: -30px;
+    line-height: 30px;
+    opacity: .5;
+}
+.about-p div{
+    margin:  0 5px 5px 0 ;
+}
+.fls img{
+    margin-top: -23px;
+    margin-left: 3px;
+}
+.about-6 h3{
+    font-size: 25px;
+    margin:  30px auto;
+}
+.about-6 ul li{
+    display: inline-block;
+}
+.s{
+    display: inline-block;
+    width: 50px;
+    height: 1px;
+    background: #b8c5cc;
+    position: relative;
+    top: -12px;
+    position: relative;
+
+}
+.sp{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url("../images/about/dian.png");
+}
+.sp:hover{
+    height: 19px;
+    background: url("../images/about/dian01.png");
+}
+.about-6 ul p{
+    position: relative;
+    left: 45px;
+}
+.about-6 ul{
+    margin: 30px auto;
+}
+.mount{
+    margin: 30px;
+    color: #cccccc;
+}
+.mount time{
+    margin-right: 50px;
+    color: #0984be;
+}
+table{
+    text-align: center;
+    font-size: 13px;
+    color: #b8c5cc;
+}
+tr{
+    width: 190px;
+}
+tr p{
+    margin: 0 10px;
+}

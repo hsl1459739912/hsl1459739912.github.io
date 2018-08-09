@@ -1,0 +1,1193 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.tBody {
+    width: 100%;
+    background-color: #f3f5f7;
+}
+
+.tBodyOne {
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 50px;
+    background: #000;
+    font-size: 12px;
+    z-index: 10;
+}
+
+.tBodyOneZhon {
+    width: 1560px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.tBodyOneZhon-l {
+    width: 55%;
+    height: 100%;
+    float: left;
+}
+
+.bodyImg {
+    float: left;
+    height: 100%;
+    margin-left: -51px;
+}
+
+.bodyOnebiao {
+    float: left;
+    text-align: center;
+    line-height: 50px;
+
+}
+
+.bodyOneli {
+    list-style-type: none;
+    float: left;
+    position: relative;
+    margin-left: 10px;
+    /*margin-right:10px;*/
+    padding: 0 18px;
+    text-align: center;
+}
+
+#beijing {
+    display: inline-block;
+    width: 60px;
+    height: 50px;
+    opacity: 1;
+    margin: 0;
+    background-image: url("http://s.c.yinyuetai.com/v2/images/modules/topbar/shop2.gif");
+}
+#beijing:hover{
+    background-image: url("http://s.c.yinyuetai.com/v2/images/modules/topbar/shop2_hover.gif");
+}
+
+.bodyOneli a {
+    text-decoration: none;
+    font-size: 14px;
+    /*padding:0 10px;*/
+    color: #ccc;
+}
+
+.tBodyOneZhon-r {
+    height: 50px;
+    float: right;
+    text-align: center;
+    line-height: 50px;
+}
+
+.tBodyOneZhon-r-r {
+    float: right;
+}
+
+.tBodyOneZhon-r-r li {
+    float: right;
+    list-style-type: none;
+}
+
+.tBodyOneZhon-r-r li a {
+    font-size: 14px;
+    color: #ccc;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+.tBodyOneZhon-r-r li:nth-child(2) a {
+    border-right: solid 1px rgba(255, 255, 255, 0.5);
+}
+
+.f1 {
+    background-image: url("http://s.c.yinyuetai.com/v2/images/modules/topbar/app.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 21px;
+    padding-right: 10px;
+    height: 33px;
+}
+
+.f2 {
+    display: inline-block;
+    position: absolute;
+    left: 45px;
+    top: 25px;
+    width: 7px;
+    height: 4px;
+    background: url("http://s.c.yinyuetai.com/v2/images/modules/topbar/topbar_sprite2.png") no-repeat -223px -18px;
+}
+
+.uul {
+    position: relative;
+    float: right;
+    height: 50px;
+}
+
+.uul-div {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    z-index: 99;
+    width: 100px;
+    height: 0;
+    background-color: #222;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+
+.tBodyOneZhon-r .uul-div-li {
+    list-style-type: none;
+    text-align: center;
+    line-height: 30px;
+    height: 30px;
+    padding: 0;;
+}
+
+.uul:hover {
+    background-color: #222;
+}
+
+.uul:hover .uul-div {
+    height: 100px;
+}
+
+.uul:hover .f2 {
+    background-image: url("http://s.c.yinyuetai.com/v2/images/modules/topbar/topbar_sprite2.png");
+    background-position: -231px -18px;
+    background-repeat: no-repeat;
+}
+
+.zhuceh:hover, .dengluh:hover {
+    color: #00A000;
+}
+
+.uul-div-li a {
+    text-decoration: none;
+}
+
+.uul li {
+    position: relative;
+    list-style-type: none;
+    padding: 0 20px;
+    height: 50px;
+}
+
+.uul li a {
+    color: #ccc;
+    line-height: 50px;
+}
+
+.uul li a span {
+    margin-top: 18px;
+}
+
+.tBodyOneZhon-r-z {
+    float: right;
+    height: 50px;
+}
+
+.tBodyOneZhon-r-zz {
+    float: right;
+    height: 50px;
+}
+
+.tBodyOneZhon-r-zz a {
+    text-align: center;
+    padding: 12px 15px;
+}
+
+.tBodyOneZhon-r-z a {
+    text-align: center;
+    padding: 12px 15px;
+}
+
+.tBodyOneZhon-r-z a span {
+    display: inline-block;
+    width: 25px;
+    margin-top: 11px;
+    height: 25px;
+    background-image: url("http://s.c.yinyuetai.com/v2/images/modules/topbar/topbar_icon.png");
+    background-position: 0 -33px;
+    background-repeat: no-repeat;
+}
+
+.tBodyOneZhon-r-zz a span {
+    display: inline-block;
+    width: 35px;
+    margin-top: 11px;
+    height: 25px;
+    background-image: url("http://s.c.yinyuetai.com/v2/images/modules/topbar/topbar_icon.png");
+    background-position: -33px -33px;
+    background-repeat: no-repeat;
+}
+
+.sousuo {
+    float: right;
+    height: 50px;
+    position: relative;
+}
+
+.sou {
+    width: 215px;
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    font-size: 12px;
+    background-color: #cccccc;
+}
+
+.sousuoko {
+    position: absolute;
+    z-index: 291;
+    top: 16px;
+    right: 13px;
+    width: 16px;
+    height: 17px;
+    text-indent: -999em;
+    cursor: pointer;
+    border: 0 none;
+    background: url("http://s.c.yinyuetai.com/v2/images/modules/topbar/topbar_sprite2.png") no-repeat -223px -1px;
+}
+
+.resou {
+    position: absolute;
+    display: block;
+    top: 50px;
+    left: 0;
+    width: 215px;
+    height: 0;
+    overflow: hidden;
+    background-color: #000;
+    z-index: 88;
+    transition: all .6s ease;
+}
+
+.resou a {
+    line-height: 30px;
+    text-decoration: none;
+    color: #b0b0b0;
+    overflow: hidden;
+}
+
+.resou-li {
+    list-style-type: none;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+}
+
+.bodyOneli-span {
+    display: inline-block;
+    position: absolute;
+    left: 51px;
+    top: 23px;
+    width: 7px;
+    height: 4px;
+    background-image: url("http://s.c.yinyuetai.com/v2/images/modules/topbar/topbar_sprite2.png");
+    background-position: -223px -18px;
+    background-repeat: no-repeat;
+
+}
+
+.bodyOnebiao .bodyOneli .pindaoxia {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    z-index: 2;
+    width: 68px;
+    background: #222;
+    height: 0;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+
+.pindaoxiali {
+    list-style-type: none;
+    text-align: center;
+    height: 35px;
+    line-height: 35px;
+}
+
+.pindaoxiali a {
+    height: 35px;
+    line-height: 35px;
+    display: inline-block;
+    color: #ccc;
+    text-decoration: none;
+    width: 68px;
+    text-align: center;
+}
+
+.tBodyTwo {
+    width: 100%;
+    height: 480px;
+    margin: 50px auto 0;
+    position: relative;
+}
+
+.tBodyTwo ul {
+    position: relative;
+    width: 1600px;
+    height: 480px;
+    margin: 0 auto;
+}
+
+.tBodyTwoli {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1600px;
+    height: 480px;
+    list-style-type: none;
+
+}
+
+.tBodyTwoli:nth-child(1) {
+    background-image: url("http://img1.c.yinyuetai.com/others/admin/170901/0/6dbc0b28d61de5faa3cbe3d235b1bcba_0x0.jpg");
+    z-index: 0;
+    opacity: 1;
+}
+
+.tBodyTwoli:nth-child(2) {
+    background-image: url("http://img2.c.yinyuetai.com/others/admin/170901/0/a20c43e4f16ad2625ac5c8d550381a25_0x0.jpg");
+    z-index: -1;
+    opacity: 0;
+}
+
+.tBodyTwoli:nth-child(3) {
+    background-image: url("http://img3.c.yinyuetai.com/others/admin/170901/0/38b7526241a6a31d70e398a1b4e14c7b_0x0.jpg");
+    z-index: -1;
+    opacity: 0;
+}
+
+.tBodyTwoli:nth-child(4) {
+    background-image: url("http://img0.c.yinyuetai.com/others/admin/170830/0/209aedf1a02b896131361b1829907372_0x0.jpg");
+    z-index: -1;
+    opacity: 0;
+}
+
+.tBodyTwoli:nth-child(5) {
+    background-image: url("http://img4.c.yinyuetai.com/others/admin/170829/0/a9f943eb5d5b06c80975a4687500ac9f_0x0.jpg");
+    z-index: -1;
+    opacity: 0;
+}
+
+.tBodyTwoli:nth-child(6) {
+    background-image: url("http://img0.c.yinyuetai.com/others/admin/170831/0/373f76677dada51e1066277fc4be2c8a_0x0.jpg");
+    z-index: 0;
+    opacity: 0;
+}
+
+.tBodyTwoli:nth-child(7) {
+    background-image: url("http://img4.c.yinyuetai.com/others/admin/170829/0/29c5092ebd816f0d8c6c803b55e1171c_0x0.jpg");
+    z-index: -1;
+    opacity: 0;
+}
+
+.tBodyTwoli:nth-child(8) {
+    background-image: url("http://img4.c.yinyuetai.com/others/admin/170830/0/779eb9a6699db2cede6833c3cadbbfa1_0x0.jpg");
+    z-index: -1;
+    opacity: 0;
+}
+
+.tBodyTwoli:nth-child(9) {
+    background-image: url("http://img2.c.yinyuetai.com/others/admin/170831/0/08ab2409d6c044b7232438f388f06e1c_0x0.jpg");
+    z-index: -1;
+    opacity: 0;
+}
+
+.tBodyTwoli:nth-child(10) {
+    background-image: url("http://img3.c.yinyuetai.com/others/admin/170829/0/19d48a31cd0453478a2380b1b508edf9_0x0.png");
+    z-index: -1;
+    opacity: 0;
+}
+
+.tBodyTwoli {
+    transition: all .6s ease;
+}
+
+.tBodyTwodiv {
+    position: absolute;
+    background: url("http://s.c.yinyuetai.com/v2/images/app/www/index_new/title_bg.png") no-repeat;
+    width: 258px;
+    height: 390px;
+    padding-top: 14px;
+    top: 29px;
+    right: 220px;
+    text-align: center;
+    z-index: 2;
+}
+
+.tBody-a {
+    text-decoration: none;
+    text-align: right;
+    display: inline-block;
+    color: #fff;
+    font-size: 14px;
+    width: 230px;
+    line-height: 34px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.tBody-a:nth-child(1) {
+    color: #690;
+}
+
+/*.tBody-a:hover{*/
+/*color: #690;*/
+/*}*/
+.tBodythere {
+    width: 100%;
+    height: auto;
+}
+
+.there {
+    width: 1600px;
+    height: auto;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.there-top {
+    width: 1600px;
+    height: 10px;
+}
+
+.there-one {
+    width: 1600px;
+    height: 489px;
+}
+
+.there-one-d {
+    position: relative;
+    width: 1600px;
+    height: 485px;
+}
+
+.there-one-d-top {
+    width: 1470px;
+    height: 40px;
+    padding: 34px 0 0px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.there-one-d-top h3 {
+    font-size: 20px;
+    color: #000;
+    float: left;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.there-ul {
+    float: right;
+}
+
+.there-li {
+    float: left;
+    list-style-type: none;
+    font-size: 14px;
+    padding: 0 19px;
+    background: url("http://s.c.yinyuetai.com/v2/images/app/www/index_new/dash_border.png") 0 no-repeat;
+}
+
+.there-li:nth-child(6) {
+    padding-right: 0;
+}
+
+.there-li:nth-child(1) {
+    background: none;
+}
+
+.there-li:hover a {
+    color: #52e2c0;
+}
+
+.there-li a {
+    color: #666;
+    text-decoration: none;
+    padding-bottom: 16px;
+}
+
+.there-li:nth-child(1) a {
+    color: #52e2c0;
+    border-bottom: 2px solid #52e2c0;
+}
+
+.therexian {
+    height: 2px;
+    background: #f4f4f4;
+    margin-top: 14px;
+}
+
+.there-left {
+    display: none;
+    left: 20px;
+    background: url("http://s.c.yinyuetai.com/v2/images/app/www/index_new/turn_arrow2.png") no-repeat;
+    background-position: -52px 0;
+    width: 26px;
+    height: 115px;
+    font-size: 0;
+    position: absolute;
+    top: 190px;
+}
+
+.there-right {
+    background: url("http://s.c.yinyuetai.com/v2/images/app/www/index_new/turn_arrow2.png") no-repeat;
+    background-position: -78px 0;
+    width: 26px;
+    height: 115px;
+    font-size: 0;
+    position: absolute;
+    top: 190px;
+    right: 20px;
+    display: none;
+}
+
+.there-left:hover {
+    background: url("http://s.c.yinyuetai.com/v2/images/app/www/index_new/turn_arrow2.png") no-repeat;
+    background-position: 1px 0;
+}
+
+.there-right:hover {
+    background: url("http://s.c.yinyuetai.com/v2/images/app/www/index_new/turn_arrow2.png") no-repeat;
+    background-position: -23px 0;
+}
+
+.therebody {
+    width: 1470px;
+    margin: 0 auto;
+    padding-top: 0;
+    height: 415px;
+    overflow: hidden;
+    position: relative;
+}
+
+.therebody-ul {
+    width: 4500px;
+    height: 398px;
+    position: absolute;
+    /*overflow: hidden;*/
+    left: 0;
+    transition: all .8s ease;
+}
+
+.therebody-lione {
+    margin-left: 0;
+    width: 470px;
+}
+
+.therebody-li {
+    list-style-type: none;
+    float: left;
+    margin-top: 26px;
+    margin-left: 30px;
+}
+
+.therebody-lione {
+    position: relative;
+    height: 349px;
+    padding-top: 0;
+    float: left;
+    overflow: hidden;
+}
+
+.therebody-lione ul {
+    width: 1000px;
+    height: 323px;
+    padding: 0;
+}
+
+.therebody-lione-li a img {
+    width: 470px;
+    height: 323px;
+    display: block;
+}
+
+.therebody-lione-li {
+    transition: all .8s ease;
+    list-style-type: none;
+    float: left;
+}
+
+.therebody-lione-left {
+    background: url("http://s.c.yinyuetai.com/v2/images/app/www/index_new/arrow.png");
+    width: 13px;
+    height: 25px;
+    position: absolute;
+    top: 150px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.therebody-lione-right {
+    background: url("http://s.c.yinyuetai.com/v2/images/app/www/index_new/arrow.png");
+    width: 13px;
+    height: 25px;
+    position: absolute;
+    top: 150px;
+    right: 10px;
+    background-position: -13px 0;
+    cursor: pointer;
+}
+
+.therebody-li-div a img {
+    width: 220px;
+    height: 124px;
+    display: block;
+}
+
+.therebody-li-div a {
+    text-decoration: none;
+}
+
+.therebody-li-div a h5 {
+    font-size: 14px;
+    line-height: 16px;
+    margin: 12px 12px 10px;
+    width: 196px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #000;
+    font-weight: 500;
+}
+
+.therebody-li-div a p {
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0 12px 21px;
+    color: #a4a4a4;
+    width: 196px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.therebody-li-div:hover a p, .therebody-li-div:hover a h5 {
+    color: #52e2c0;
+}
+
+.tBodyFour {
+    width: 100%;
+    margin-top: 5px;
+    height: auto;
+}
+
+.tBodyFour-body {
+    width: 1600px;
+    height: 489px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+.four {
+    width: 1470px;
+    margin: 0 auto;
+    height: 485px;
+}
+
+.four-top {
+    padding: 34px 0 16px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.four-top h3 {
+    font-size: 20px;
+    float: left;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.four-top h3 a {
+    text-decoration: none;
+    color: #000;
+}
+
+.four-top-r {
+    float: left;
+    margin-left: 15px;
+    overflow: hidden;
+    margin-top: 6px;
+}
+
+.four-top-r-a {
+    color: #666;
+    font-size: 14px;
+    padding: 0 13px;
+    line-height: 14px;
+    float: left;
+    border-left: 1px solid #e5e5e5;
+    text-decoration: none;
+}
+
+.four-top-r-a:hover {
+    color: #52e2c0;
+}
+
+.fourxian {
+    height: 2px;
+    background: #f4f4f4;
+    margin-top: -2px;
+}
+
+.fourbody {
+    padding-top: 17px;
+    height: 398px;
+    overflow: hidden;
+    position: relative;
+}
+
+.fourbody-ul {
+    height: 378px;
+    overflow: hidden;
+}
+
+.fourbody-li-a {
+    text-decoration: none;
+    color: #333;
+}
+
+.fourbody-li {
+    list-style-type: none;
+    float: left;
+    margin-left: 30px;
+    width: 220px;
+}
+
+.fourbody-li:nth-child(1) {
+    margin-left: 0;
+    width: 470px;
+}
+
+.fourbody-li-a img {
+    width: 470px;
+    height: 323px;
+    display: block;
+}
+
+.fourbody-li-a h5 {
+    font-size: 16px;
+    line-height: 16px;
+    margin: 12px 12px 12px;
+    width: 445px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.fourbody-li-a p {
+    font-size: 14px;
+    line-height: 14px;
+    margin: 0 12px;
+    width: 445px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #a4a4a4;
+}
+
+.fourbody-li-one-h4 {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: bold;
+}
+
+.fourbody-li-one-span {
+    color: #a4a4a4;
+    display: block;
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+
+.fourbody-li-divtwo {
+    border-top: none;
+    cursor: pointer;
+}
+
+.fourbody-li-divtwo a {
+    color: #333;
+    text-decoration: none;
+}
+
+.fourbody-li-divtwo h5 {
+    width: 196px;
+    font-size: 14px;
+    line-height: 25px;
+    margin: 12px 12px 8px;
+    max-height: 50px;
+    text-overflow: inherit;
+    white-space: inherit;
+    font-weight: 500;
+}
+
+.fourbody-li:nth-child(1):hover a h5, .fourbody-li:nth-child(1):hover a p {
+    color: #52e2c0;
+}
+
+.four-img {
+    display: none;
+}
+
+.fourbody-li h5 {
+    color: #000;
+}
+
+.tBodyFive {
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+}
+
+.tBodyFive-body {
+    width: 1600px;
+    height: 386px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.five {
+    width: 1470px;
+    height: 382px;
+    margin: 0 auto;
+}
+
+.five-one {
+    padding: 34px 0 16px;
+    overflow: hidden;
+}
+
+.five-one h3 {
+    font-size: 20px;
+    color: #000;
+    float: left;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.five-one a {
+    color: #a4a4a4;
+    font-size: 14px;
+    float: right;
+    text-decoration: none;
+}
+
+.five-one h3 a {
+    color: #000;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.five-two {
+    height: 2px;
+    background: #f4f4f4;
+    margin-top: -2px;
+}
+
+.five-there {
+    height: 294px;
+    padding-top: 17px;
+    overflow: hidden;
+    position: relative;
+}
+
+.five-there-ul {
+    height: 270px;
+    overflow: hidden;
+}
+
+.five-there-li {
+    float: left;
+    margin-left: 30px;
+    width: 220px;
+    position: relative;
+    cursor: pointer;
+    list-style-type: none;
+}
+
+.five-there-li:nth-child(1) {
+    margin-left: 0;
+}
+
+.five-there-li img {
+    width: 220px;
+    height: 220px;
+    display: block;
+}
+
+.five-there-li h5 {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 11px 12px 8px;
+    width: 196px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.five-there-li p {
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0 12px;
+    color: #a4a4a4;
+    width: 196px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.five-there-li-divtwo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 470px;
+    height: 270px;
+    background: #f3f5f7;
+    z-index: 1;
+    overflow: hidden;
+    display: none;
+}
+
+#five-there-li-divtwo {
+    position: absolute;
+    top: 0;
+    left: -250px;
+}
+
+.five-there-li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.five-there-li-divtwo-div {
+    float: left;
+    width: 270px;
+    height: 270px;
+}
+
+.five-there-li-divtwo-div img {
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+.five-there-li-divtwo-span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("http://s.c.yinyuetai.com/v2/images/app/www/index_new/play_icon.png") no-repeat;
+    background-size: 100%;
+    width: 270px;
+    height: 270px;
+}
+
+.tototo h4 {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.totoone {
+    height: 145px;
+    overflow: hidden;
+}
+
+.totoone-span {
+    font-size: 12px;
+    color: #a4a4a4;
+    line-height: 23px;
+    margin-top: -6px;
+    display: block;
+}
+
+.tototwo img {
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.tototwo-span {
+    font-size: 14px;
+    margin-left: 50px;
+    line-height: 40px;
+    display: block;
+}
+
+.totothere {
+    font-size: 12px;
+    color: #a4a4a4;
+    margin-left: 50px;
+    display: block;
+}
+
+.totothere i {
+    background: url("http://s.c.yinyuetai.com/v2/images/app/www/index_new/playcount.png") no-repeat;
+    display: inline-block;
+    width: 13px;
+    height: 14px;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-bottom: 3px;
+}
+.tBodySix{
+    width:100%;
+    height:150px;
+    margin: 30px auto 0;
+    min-width: 1000px;
+    color: #999;
+    line-height: 22px;
+    text-align: center;
+    background-color: #fff;
+}
+.sixone{
+    font-size: 14px;
+    padding: 35px 0 20px;
+    color: #666;
+}
+.sixone a{
+    color: #666;
+    text-decoration: none;
+}
+.ico{
+    width: 2px;
+    height: 10px;
+    margin: 0 8px;
+    display: inline-block;
+    overflow: hidden;
+    background: url(http://s.c.yinyuetai.com/v2/images/base/ico/ico_index.png) no-repeat -70px 0;
+}
+.sixtwo{
+    font-size: 12px;
+    color:#999;
+}
+.sixtwo a{
+    text-decoration: none;
+    color:#999;
+    font-size: 12px;
+}
+.sixtwoimgone{
+    vertical-align: top;
+    width: 25px;
+    height: 25px;
+    margin-right: 3px;
+}
+.sixtwoimgtwo{
+    margin-top: -28px;
+}
+.tBodySeven{
+    width: 100%;
+}
+.sevenbody{
+    width:1600px;
+    height: 291px;
+    margin:5px auto;
+    background-color: #fff;
+}
+.seven{
+    width:1470px;
+    height:287px;
+    margin:0 auto;
+    overflow: hidden;
+}
+.seven-ul{
+    width: 6000px;
+    margin-top:15px;
+}
+.seven-li{
+    list-style-type: none;
+    float: left;
+    margin-left: 30px;
+}
+.seven-li:nth-child(1){
+    margin-left: 0;
+}
+.huanhuan{
+    background-image: url("http://s.c.yinyuetai.com/v2/images/app/www/index_new/change.png");
+    background-position: 3px 3px;
+    background-repeat: no-repeat;
+    padding-left: 23px;
+}
+.huanhuan:hover{
+    color: #8ac980;
+}
+.seven-ul a{
+    font-size: 14px;
+    text-decoration: none;
+}
+.seven-li img{
+    width: 220px;
+    height: 124px;
+    display: block;
+    border: none;
+}
+.seven-li h5{
+    font-size: 14px;
+    line-height: 16px;
+    margin: 12px 12px 10px;
+    width: 196px;
+    overflow: hidden;
+    color: #666666;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.seven-li p{
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0 12px 21px;
+    color: #a4a4a4;
+    width: 196px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.tBodyseven{
+    height: 65px;
+    width:50px;
+    position: fixed;
+    right: 0;
+    top:1000px;
+    z-index: 298;
+    overflow: hidden;
+    display: none;
+    transition: all .8s ease;
+}
+.fanhuione{
+    display: block;
+    background: url("http://s.c.yinyuetai.com/v2/images/modules/returntop/returntop.png") no-repeat;
+    position: absolute;
+    height: 65px;
+    width: 50px;
+    top: 0;
+}
+.fanhuitwo{
+    display: block;
+    background: url("http://s.c.yinyuetai.com/v2/images/modules/returntop/returntop.png") no-repeat;
+    position: absolute;
+    left: -50px;
+    height: 65px;
+    width: 50px;
+    top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.top {
+    width: 100%;
+    position: absolute;
+    left: 10%;
+    margin-left: -200px;
+    background-color: black;
+    padding: 20px 0px 0px 200px;
+    min-width: 1200px;
+}
+.menu-list li{
+    float: left;
+    list-style: none;
+}
+.menu-list li a{
+    display: block;
+    width: 100%;
+    height: 40px;
+    color: white;
+    text-align: right;
+    font-size: 20px;
+    line-height: 10px;
+    margin: 10px 10px;
+    text-decoration: none;
+}
+.menu-list li ul{
+    list-style: none;
+    display: none;
+    position: absolute;
+    background-color: black;
+}
+.menu-list li ul li{
+    float: none;
+}
+.menu-list li a:hover{
+    color: pink;
+}
+.menu-list li:hover ul{
+    display: block;
+}
+.menu-list li ul li a {
+    width: 100%;
+    height: 40px;
+    line-height: 5px;
+    color: white;
+    text-align: center;
+    border-top: none;
+    display: block;
+}
+.search input{
+    margin-top: 10px;
+    width: 300px;
+    height: 30px;
+    position: absolute;
+    right: 40%;
+    top: 10px;
+    border-radius:20% ;
+}
+.login{
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 15%;
+    font-size: 15px;
+}
+.login a{
+    color: white;
+    text-decoration: none;
+}
+.middle{
+    padding-top:80px ;
+}
+.tail{
+
+}footer{
+    width: 100%;
+    min-width: 1200px;
+    text-align: center;
+    margin-top: 10px;
+ }
+ .middle hr{
+    width:100%;
+     text-align: center;
+     color: darkgrey;
+ }
+.fashion{
+    position: absolute;
+    top: 90px;
+    right: 8%;
+}
+.fashion>li {
+    display: inline-block;
+    height: 10px;
+    font-size: 5px;
+    cursor: pointer;
+    padding: 0 20px;
+    position: relative;
+    left: 20%;
+}
+.show-sytle ul li img{
+    width: 20%;
+    height: auto;
+    position: relative;
+}
+.img1{
+    position: absolute;
+    left: 4%;
+}
+.img2{
+    position: absolute;
+    left: 8%;
+}
+.img3{
+    position: absolute;
+    left: 12%;
+}
+.img4{
+    position: absolute;
+    left: 16%;
+}
+
+.img5{
+    position: absolute;
+    left: 4%;
+}
+.img6{
+    position: absolute;
+    left: 8%;
+}
+.img7{
+    position: absolute;
+    left: 12%;
+}
+.img8 {
+    position: absolute;
+    left: 16%;
+}
+.img-style{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}

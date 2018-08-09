@@ -1,0 +1,31 @@
+
+.shop{
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 10%;
+    
+}
+.shop>div{
+    padding: 50px;
+    cursor: pointer;
+}
+.shop>div:hover{
+    border: 1px solid #000000;
+}
+.minu{
+    text-align: center;
+    width: 500px;
+    margin:100px 50%;
+    transform: translateX(-50%);
+}
+.shopcar,.minu{
+    display: none;
+}
+.shopcar{
+    margin: 10% 30%;
+}
+.shopcar>div>div{
+    margin-bottom: 5%;
+    border: 1px solid #724141;
+    padding: 10px;
+}

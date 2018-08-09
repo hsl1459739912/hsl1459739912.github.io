@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        /*一二级菜单横向排列*/
+        ul li{
+            float: left;
+        }
+        /*二级菜单默认不显示*/
+        ul li ul{
+            display: none;
+        }
+        /*一级菜单获得焦点时显示其二级菜单*/
+        ul li:hover ul{
+            display: block;
+            position: absolute;
+            padding-left: 0px;
+        }
+        /*不显示列表样式*/
+        li{
+            list-style: none;
+        }
+        /*二级菜单纵向显示*/
+        /*
+        ul li ul li{
+            float: none;
+        }
+        */
+    </style>
+</head>
+<body>
+<div>
+    <ul>
+        <li>A
+            <ul>
+                <li>1</li>
+                <li>2</li>
+            </ul>
+        </li>
+        <li>B</li>
+        <li>C</li>
+    </ul>
+</div>
+</body>
+</html>
