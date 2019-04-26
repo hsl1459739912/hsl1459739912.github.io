@@ -1,0 +1,111 @@
+ <!DOCTYPE html>
+ <html lang="zh-CN">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>言念君子 乱我心曲</title>
+     <link rel="shortcut icon" href="./fn.ico" type="image/x-icon">
+ </head>
+ <body>
+     <style>
+         body{
+             box-sizing: border-box;
+             background: url('./bg.jpg') no-repeat ;
+             background-size:cover;
+             font-family: '宋体'
+         }
+         .w{
+             width: 400px;
+             height: 300px;
+             margin-left: 50%;
+             transform: translateX(-50%);
+             margin-top: 200px;
+             background: white;
+             border-radius: 20px;
+             position: relative;
+         }
+         .a,.b{
+             transition:background,border,color 1s;
+             transition: 2s;
+             display: inline-block;
+             margin-top: 100px;
+             margin-left: 70px;
+             cursor: pointer;
+            width: 60px;
+            height: 30px;
+            font-size: 16px;
+            line-height: 30px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            border: 1.5px solid #929292;
+            text-align: center;
+            color: #686868
+         }
+         .a:hover,.b:hover{
+             border: 1.5px solid white;
+             background: #409eff;
+             color: white;
+         }
+         .c{
+             text-align: center;
+             font-size: 26px;
+             font-weight: bold;
+             transform: translateY(30%);
+             color: #929292;
+         }
+         .aa{
+             position: absolute;
+             top: 50px;
+             left: 60px;
+         }
+         .bb{
+             position: absolute;
+             top: 50px;
+             right: 60px;
+         }
+         .cc{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 20px;
+         }
+     
+     </style>
+     <div class="w">
+        <img class="aa" src="./a.jpg" alt="">
+        <img class="bb" src="./b.jpg" alt="">
+        <img class="cc" src="./c.gif" alt="">
+        <div class="c">你可以喜欢我一下下吗?</div>
+        <div class="a" style="width:100px;height:40px">不可以</div>
+        <div class="b" style="width:100px;height:40px">可以</div>
+     </div>
+     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+     <script>
+         var i = 0;
+         $('.a').hover(function(){
+             if(i<3){
+                 $('.a').text('可以');
+                $('.b').text('不可以');
+             }
+         },
+         function(){
+            if(i<3){
+                $('.a').text('不可以');
+                $('.b').text('可以');
+            }else{
+                alert('你就不能多喜欢我一下吗?QWQ');
+                i = 0;
+            }
+            i++;
+         })
+         $('.a').on('click',function(){
+             alert('最喜欢林庭昇啦!!!mua~')
+         })
+         $('.b').on('click',function(){
+             alert('最喜欢林庭昇啦!!!mua~')
+         })
+     </script>
+ </body>
+ </html>
