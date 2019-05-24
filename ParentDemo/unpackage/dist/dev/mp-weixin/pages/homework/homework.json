@@ -1,0 +1,9 @@
+{
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "light",
+  "usingComponents": {
+    "chosetime": "/components/focutime",
+    "chosedate": "/components/focudate",
+    "noconetnt": "/components/noconetnt"
+  }
+}

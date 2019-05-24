@@ -1,0 +1,97 @@
+
+.own_bgI {
+	width: 100%;
+	height: 300rpx;
+	background-image: url('http://wx.cdlzzh.cn/static/own_bg%403x.png');
+	position: relative;
+}
+.bgI_left {
+	display: inline-block;
+	width: 35%;
+	height: 90%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.bgI_left>image {
+	width: 157rpx;
+	height: 157rpx;
+	position: absolute;
+	top: 65rpx;
+	left: 36rpx;
+}
+.bgi_right {
+	display: inline-block;
+	width: 70%;
+	height: 100%;
+	position: absolute;
+	left: 30%;
+	top: 0;
+}
+.own_bgI>view {
+	color: #ffffff;
+}
+.own_bgI .xingM {
+	font-size: 68rpx;
+	color: #ffffff;
+	position: absolute;
+	top: 50rpx;
+	left: 0;
+}
+.xueH {
+	position: absolute;
+	bottom: 105rpx;
+	left: 0;
+}
+.phone {
+	position: absolute;
+	bottom: 50rpx;
+	left: 0;
+}
+.com_view {
+	width: 100%;
+	height: 100rpx;
+	background-color: #ffffff;
+	line-height: 100rpx;
+}
+.com_view>.img1 {
+	display: inline-block;
+	width: 27rpx;
+	height: 27rpx;
+	margin-left: 56rpx;
+}
+.com_view>text {
+	font-size: 32rpx;
+	color: #282828;
+	margin-left: 56rpx;
+}
+.com_view>.img2 {
+	display: inline-block;
+	width: 20rpx;
+	height: 35rpx;
+	float: right;
+	margin-right: 35rpx;
+	margin-top: 35rpx;
+}
+.com_view>.img2:after {
+	clear: both;
+}
+.title1 {
+	width: 100%;
+	height: 100rpx;
+	background-color: #FFFFFF;
+}
+.title1>image {
+	width: 40rpx;
+	height: 39rpx;
+	margin-top: 25rpx;
+	margin-left: 30rpx;
+}
+.title1>text {
+	font-family: HiraginoSansGB-W3;
+	font-size: 36rpx;
+	color: #282828;
+	margin-top: 27rpx;
+	margin-left: 25rpx;
+}
+

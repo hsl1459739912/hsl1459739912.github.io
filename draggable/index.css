@@ -1,0 +1,28 @@
+.box1,.box2{
+    width: 80%;
+    height: 200upx;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 2px solid #f2f2f2;
+    margin-left: 10%;
+    margin-top: 100px;
+}
+p{
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    background: #0094fc;
+    color: white;
+    cursor: pointer;
+}
+.box{
+    padding: 50px;
+    border: 2px solid #0094fc;
+    user-select: none;
+}
+.fix{
+    position: fixed;
+    pointer-events:none
+}

@@ -1,0 +1,1 @@
+<view bind:__l="__l"><view class="top bgwhite"><view class="ts40 title" style="color:#010101;">{{title}}</view><view class="ts28"><text class="texteee">{{time}}</text><text style="color:#64c4fb;display:inline-block;margin-left:10rpx;">{{name}}</text></view></view><view class="content ts32 text bgwhite"><view class="list"><text>{{arrange}}</text></view></view></view>

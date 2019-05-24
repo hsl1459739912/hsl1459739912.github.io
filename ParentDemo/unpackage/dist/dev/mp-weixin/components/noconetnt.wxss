@@ -1,0 +1,26 @@
+
+.err{
+	margin-top: 60rpx;
+	text-align: center;
+}
+.errs{
+	margin-top: 286rpx;
+	text-align: center;
+}
+.err image{
+	width: 160rpx;
+	height: 160rpx;
+	text-align: center;
+}
+.errs image{
+	width: 160rpx;
+	height: 160rpx;
+	text-align: center;
+}
+.err view{
+	text-align: center;
+}
+.errs view{
+	text-align: center;
+}
+

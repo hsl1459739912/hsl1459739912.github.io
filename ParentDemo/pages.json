@@ -1,0 +1,98 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTextStyle" : "black"
+			}
+		}
+	    ,{
+            "path" : "pages/main/main",
+            "style" : {
+				"navigationBarTextStyle" : "black"
+			}
+        }
+        ,{
+            "path" : "pages/seeTimetable/seeTimetable",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/homework/homework",
+            "style" : {
+				"enablePullDownRefresh":true,
+				"backgroundTextStyle":"light",
+				"h5":{
+					"pullToRefresh":{
+						
+					}
+				}
+			}
+        }
+        ,{
+            "path" : "pages/homedetail/homedetail",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/notice/notice",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/noticedel/noticedel",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/workcount/workcount",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/countdel/countdel",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/record/record",
+            "style" : {}
+        },
+		{
+		    "path" : "pages/lesEval/lesEval",
+		    "style" : {}
+		}
+		,{
+		    "path" : "pages/evalDetail/evalDetail",
+		    "style" : {}
+		}
+		,{
+		    "path" : "pages/updatePWD/updatePWD",
+		    "style" : {}
+		}
+		,{
+		    "path" : "pages/login/login",
+		    "style" : {}
+		}
+    ],
+	"globalStyle" : {
+	    "navigationBarTextStyle" : "white",
+	    "navigationBarTitleText" : "智办校园",
+	    "navigationBarBackgroundColor" : "#000000",
+	    "navigationStyle" : "custom"
+	},
+	 "tabBar" : {
+	    "color" : "#616161",
+	    "selectedColor" : "#2277ff",
+	    "backgroundColor" : "#ffffff",
+	    "borderStyle" : "black",
+	    "list" : [
+	        {
+	            "pagePath" : "pages/index/index",
+	            "text" : "首页",
+	            "iconPath" : "/static/index/shape1.png",
+	            "selectedIconPath" : "/static/index/Shape1@3x.png"
+	        },
+	        {
+	            "pagePath" : "pages/main/main",
+	            "text" : "我的",
+	            "iconPath" : "static/index/user@3x.png",
+	            "selectedIconPath" : "static/index/User.png"
+	        }
+	    ]
+	}
+}

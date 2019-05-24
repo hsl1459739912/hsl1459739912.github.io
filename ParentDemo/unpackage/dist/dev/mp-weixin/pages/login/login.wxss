@@ -1,0 +1,86 @@
+
+.login_bgi {
+	width: 100%;
+	height: 493rpx;
+	background-image: url('http://wx.cdlzzh.cn/static/login_bg%403x.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+}
+.login_rect {
+	width: 92%;
+	height: 473rpx;
+	border-radius: 12px;
+	-webkit-box-shadow: 0px 1px 20px 0 rgba(0, 0, 0, 0.1);
+	        box-shadow: 0px 1px 20px 0 rgba(0, 0, 0, 0.1);
+	background-color: #ffffff;
+	/* background-color: lightpink; */
+	position: relative;
+	top: 370rpx;
+	margin: 0 auto;
+}
+.login_rect .rec_auto {
+	width: 85%;
+	height: 100%;
+	/* background-color: lightblue; */
+	margin: 0 auto;
+}
+.rec_auto .l_rect {
+	border-bottom: 1rpx solid #F2F2F2;
+}
+.l_rect image {
+	display: inline-block;
+	margin-right: 20rpx;
+	margin-bottom: 35rpx;
+}
+.lo_re1>image {
+	width: 31rpx;
+	height: 36rpx;
+	margin-top: 70rpx;
+}
+.lo_re2>image {
+	width: 25rpx;
+	height: 33rpx;
+	margin-top: 40rpx;
+}
+.l_rect input {
+	display: inline-block;
+	margin-left: 20rpx;
+	position: relative;
+	top: -25rpx;
+}
+.l_rect .lRect_place {
+	font-size: 28rpx;
+	color: #dfdede;
+}
+.rec_auto .login_btn {
+	width: 100%;
+	height: 80rpx;
+    border-radius: 39rpx;
+    background-image: -webkit-gradient(linear, left top, right top, from(#3094f2), to(#146cff));
+    background-image: -o-linear-gradient(left, #3094f2, #146cff);
+    background-image: linear-gradient(to right, #3094f2, #146cff);
+	line-height: 75rpx;
+	color: #FFFFFF;
+	font-size: 45rpx;
+	margin-top: 60rpx;
+}
+.title1 {
+	width: 100%;
+	height: 100rpx;
+	background-color: #FFFFFF;
+}
+.title1>image {
+	width: 40rpx;
+	height: 39rpx;
+	margin-top: 25rpx;
+	margin-left: 30rpx;
+}
+.title1>text {
+	font-family: HiraginoSansGB-W3;
+	font-size: 36rpx;
+	color: #282828;
+	margin-top: 27rpx;
+	margin-left: 25rpx;
+}
+

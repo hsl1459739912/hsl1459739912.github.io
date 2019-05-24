@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/main/main",
+    "pages/seeTimetable/seeTimetable",
+    "pages/homework/homework",
+    "pages/homedetail/homedetail",
+    "pages/notice/notice",
+    "pages/noticedel/noticedel",
+    "pages/workcount/workcount",
+    "pages/countdel/countdel",
+    "pages/record/record",
+    "pages/lesEval/lesEval",
+    "pages/evalDetail/evalDetail",
+    "pages/updatePWD/updatePWD",
+    "pages/login/login"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "智办校园",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "color": "#616161",
+    "selectedColor": "#2277ff",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/static/index/shape1.png",
+        "selectedIconPath": "/static/index/Shape1@3x.png"
+      },
+      {
+        "pagePath": "pages/main/main",
+        "text": "我的",
+        "iconPath": "static/index/user@3x.png",
+        "selectedIconPath": "static/index/User.png"
+      }
+    ]
+  },
+  "usingComponents": {}
+}
