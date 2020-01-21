@@ -1,8 +1,8 @@
-.DS_Store
+*.DS_Store
 *node_modules
-/dist
-/coverage
-*vue.config.js
+*/dist
+*/coverage
+vue.config.js
 
 # local env files
 .env.local
